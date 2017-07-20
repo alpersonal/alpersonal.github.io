@@ -20,17 +20,7 @@
 			color: #1f2f46;
 			text-align: justify;
 		}
-	</style>
-	<script type="text/javascript">
-		// $(".aside a").click(function(e) {
-  //       e.preventDefault();
-  //       $(".nav").toggleClass("toggled");
-  //   	});
-	  	$('aside li').on('click', function(){
-	        $(".pmd-sidebar-left").hide();
-	        $("#ali").removeClass("active");
-	    });
-	</script>
+	</style>	
 	</head>
 
 	<body>
@@ -39,11 +29,8 @@
 		<nav class="navbar navbar-inverse navbar-fixed-top pmd-navbar pmd-z-depth">
 
 			<div class="container-fluid">
-				<div class="pmd-navbar-right-icon pull-right navigation">
-					<!-- Notifications -->
-		            
-				</div>
-				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="pmd-navbar-right-icon pull-right navigation">							            
+				</div>				
 				<div class="navbar-header">
 					<a href="javascript:void(0);" class="btn btn-sm pmd-btn-fab pmd-btn-flat pmd-ripple-effect pull-left margin-r8 pmd-sidebar-toggle"><i class="material-icons" style="color: #f4f4f4">menu</i></a>	
 				  <a href="index.html" class="navbar-brand">
@@ -52,30 +39,18 @@
 				</div>
 			</div>
 
-		</nav><!--End Nav bar -->
+		</nav>
+		<!--End Nav bar -->
 		<!-- Header Ends -->
-
 		<!-- Sidebar Starts -->
 		<div class="pmd-sidebar-overlay"></div>
-
 		<!-- Left sidebar -->
 		<aside class="nav pmd-z-depth-2 pmd-sidebar sidebar-inverse pmd-sidebar-slide-push pmd-sidebar-left pmd-sidebar-close bg-fill-darkblue sidebar-with-icons" role="navigation">
-			<ul class="nav pmd-sidebar-nav">
-				
+			<ul class="nav pmd-sidebar-nav">				
 				<!-- User info -->
-				<li class="dropdown pmd-dropdown pmd-user-info visible-xs visible-md visible-sm visible-lg">
-					<!-- <a aria-expanded="false" data-toggle="dropdown" class="btn-user dropdown-toggle media" data-sidebar="true" aria-expandedhref="javascript:void(0);">
-						<div class="media-left">
-							<img src="themes/images/user-icon.png" alt="New User">
-						</div>
-						<div class="media-body media-middle">Propeller Admin</div>
-						<div class="media-right media-middle"><i class="dic-more-vert dic"></i></div>
-					</a> -->
-					<!-- <ul class="dropdown-menu">
-						<li><a href="login.html">Logout</a></li>
-					</ul> -->
-				</li><!-- End user info -->
-				
+				<li class="dropdown pmd-dropdown pmd-user-info visible-xs visible-md visible-sm visible-lg">					
+				</li>
+				<!-- End user info -->				
 				<li id="ali" class="active"> 
 					<a class="pmd-ripple-effect" href="#section1">	
 						<i class="material-icons media-left media-middle" style="color: #f4f4f4;">home</i>
@@ -93,15 +68,11 @@
 						<i class="material-icons media-left media-middle" style="color: #f4f4f4;">phone</i>
 						<span class="media-body" style="color: #f4f4f4;">Get in touch</span>
 					</a> `
-				</li>
-				
-				
-				
+				</li>				
 			</ul>
 		</aside>
 		<!-- End Left sidebar -->
-		<!-- Sidebar Ends -->  
-		
+		<!-- Sidebar Ends -->  		
 		<!--content area start-->
 		<div id="content" class="pmd-content content-area dashboard">
 			<div class="pmd-z-depth-2 container-fluid" style="height: 100%; background: transparent; padding-top: 10px;">
@@ -315,7 +286,6 @@
 			</div><br>
 		</div>
 		<!--end content area-->
-
 		<!-- Footer Starts -->
 		<!--footer start-->
 		<footer class="pmd-z-depth-2 admin-footer" style="height: 20%;">
@@ -331,21 +301,7 @@
 		<!--footer end-->
 		<!-- Footer Ends -->
 		<!-- Scripts Starts -->
-		<script src="assets/js/jquery-1.12.2.min.js"></script>
-		<script type="text/javascript">
-			// $('aside a').click(function(){  
-		 //    //Toggle Class
-		 //    $(".active").removeClass("active");      
-		 //    $(this).closest('li').addClass("active");
-		 //    var theClass = $(this).attr("class");
-		 //    $('.'+theClass).parent('li').addClass('active');
-		 //    //Animate
-		 //    $('body').stop().animate({
-		 //        scrollTop: $($(this).attr('href')).offset().top - 100
-		 //    }, 400);
-		 //    return false;
-		  });
-		</script>
+		<script src="assets/js/jquery-1.12.2.min.js"></script>		
 		<script src="assets/js/bootstrap.min.js"></script>
 		<script type="text/javascript">
 		(function() {
@@ -361,7 +317,6 @@
 		      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
 		    });
 		  }
-
 		})();
 		</script>
 		<script src="assets/js/propeller.min.js"></script> 
