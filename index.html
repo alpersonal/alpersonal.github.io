@@ -21,6 +21,16 @@
 			text-align: justify;
 		}
 	</style>
+	<script type="text/javascript">
+		// $(".aside a").click(function(e) {
+  //       e.preventDefault();
+  //       $(".nav").toggleClass("toggled");
+  //   	});
+	  	$('aside li').on('click', function(){
+	        $(".pmd-sidebar-left").hide();
+	        $("#ali").removeClass("active");
+	    });
+	</script>
 	</head>
 
 	<body>
@@ -35,7 +45,7 @@
 				</div>
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
-					<a href="javascript:void(0);" class="btn btn-sm pmd-btn-fab pmd-btn-flat pmd-ripple-effect pull-left margin-r8 pmd-sidebar-toggle"><i class="material-icons" style="color: #f4f4f4">menu</i></a>	
+					<a href="javascript:void(0);" class="btn btn-sm pmd-btn-fab pmd-btn-flat pmd-ripple-effect pull-left margin-r8"><i class="material-icons" style="color: #f4f4f4">menu</i></a>	
 				  <a href="index.html" class="navbar-brand">
 				  	Alistair Lobo
 				  </a>
@@ -49,7 +59,7 @@
 		<div class="pmd-sidebar-overlay"></div>
 
 		<!-- Left sidebar -->
-		<aside class="nav pmd-z-depth-2 pmd-sidebar sidebar-default pmd-sidebar-slide-push pmd-sidebar-left pmd-sidebar-close bg-fill-darkblue sidebar-with-icons" role="navigation">
+		<aside class="nav pmd-z-depth-2 pmd-sidebar sidebar-inverse pmd-sidebar-slide-push pmd-sidebar-left pmd-sidebar-close bg-fill-darkblue sidebar-with-icons" role="navigation">
 			<ul class="nav pmd-sidebar-nav">
 				
 				<!-- User info -->
@@ -66,7 +76,7 @@
 					</ul> -->
 				</li><!-- End user info -->
 				
-				<li class="active"> 
+				<li id="ali" class="active"> 
 					<a class="pmd-ripple-effect" href="#section1">	
 						<i class="material-icons media-left media-middle" style="color: #f4f4f4;">home</i>
 						<span class="media-body" style="color: #f4f4f4;">Home</span>
